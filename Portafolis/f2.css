@@ -1,0 +1,155 @@
+*{
+    border-radius: 5px;
+}
+body{
+background-image: url("fotitos/amics.jpg");background-size: 100%; background-attachment: fixed; background-repeat: no-repeat;
+text-align: center; margin-top: 0%; margin-bottom: 10%; padding: 1px; margin-left: 0%; margin-right: 0%; background-color: azure;
+}
+#titol, #peu, #aficions{
+    box-shadow: 5px 5px 10px rgb(218, 5, 5);
+    margin-top: 10%;
+    width: 120px;
+    height: 50px;
+}
+#Gallery, #peu, #aficions, .tt{
+    background: linear-gradient(to right, rgb(255, 1, 128), rgb(255, 0, 119));
+    box-shadow: 5px 5px 10px rgb(255, 238, 0);
+width: 100%;
+}
+#aficions{
+    background: linear-gradient(to right, rgb(6, 190, 0), rgb(255, 251, 0));
+    box-shadow: 5px 5px 10px rgb(5, 204, 218);
+    width: 220px;
+}
+#taula{
+    background: linear-gradient(to right, rgb(6, 190, 0), rgb(255, 251, 0));
+    box-shadow: 5px 5px 10px rgb(5, 204, 218);
+    height: 930px;
+    width: 220px;
+}
+
+#indexflex{
+display:flex;
+flex-direction: column;
+background: linear-gradient(to top, rgb(103, 208, 235), rgb(128, 18, 231));
+padding: 10px;
+margin: 0px;
+width: 1fr; width: 1325px; ; height: 100%;
+justify-content:flex-start;
+align-items:center;
+box-shadow: 5px 5px 10px rgb(6, 2, 252);
+font-size: 16px;
+height: 50px;
+}
+#Gallery table{
+text-align: center;
+width: 100%;
+}
+#Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    margin-left: 10px;
+    margin-right: 10%;
+    } 
+    
+    .tt{
+        background: linear-gradient(to right, rgb(255, 1, 128), rgb(255, 0, 119));
+        box-shadow: 5px 5px 10px rgb(255, 238, 0);
+        margin-left: 10px;
+        width: 95%;
+        margin-top: 0%;
+     
+    }
+
+#titol{grid-area: titol;
+    background: linear-gradient(to right, rgb(132, 0, 255), rgb(255, 0, 119));
+    box-shadow: 5px 5px 10px rgb(255, 0, 0);
+    width: 100%;
+    height: 100px;
+    }
+    #cos{grid-area: cos;}
+    #index{grid-area: index;
+    height: 50%;
+    width: 100%;}
+    #jo{grid-area: jo;}
+    #aficions{grid-area: aficions;}
+    #peu{grid-area: peu;}
+
+    #grid{
+    display: grid;
+    grid-template-areas:
+        "dalt dalt dalt dalt dalt"
+        "index index index index index"
+        "titol titol titol titol titol"
+        "aficions aficions jo jo jo"
+        "aficions aficions cos cos cos"
+        "aficions aficions cos cos cos"
+        "peu peu peu peu peu";
+        gap: 10px;
+        }
+        
+        #peu{
+            position:relative;
+            background: linear-gradient(to right, rgb(212, 162, 162), rgb(211, 16, 123));
+            box-shadow: 5px 5px 10px rgb(218, 5, 5);
+            text-align: center;
+            padding: 0px;
+            height: 300px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 230px;
+            width: 1100px;
+        }
+        #jo{
+            background: linear-gradient(to right, rgb(7, 184, 145), rgb(255, 0, 119));
+            box-shadow: 5px 5px 10px rgb(88, 83, 7);
+            margin-left: 5px;
+            width: 99%;
+            margin-top: 3%;
+            text-align: center;
+            height: 200px;
+        }
+
+        .jo{
+            background: linear-gradient(to right, rgb(7, 184, 145), rgb(255, 0, 119));
+            box-shadow: 5px 5px 10px rgb(88, 83, 7);
+            margin-left: 10px;
+            width: 99%;
+            margin-top: 0%;
+            text-align: center; 
+            height: 50px;
+            font-size: 45px;
+        }
+
+#cap{
+background: linear-gradient(to right, rgb(212, 162, 162), rgb(211, 16, 123));
+box-shadow: 5px 5px 10px rgb(218, 5, 5);
+font-size: 45px;
+width: 100%;
+height: 120px;
+text-align: center;
+position:fixed;
+}
+
+
+@media (max-width: 800px) { 
+    #Gallery{
+        flex-direction: column;
+    }
+    #grid{
+        grid-template-areas:
+        "dalt"
+        "titol"
+        "index"
+        "cos"
+        "aficions"
+        "peu";
+    }
+    #index{
+        height: 70%;
+    }
+    }
